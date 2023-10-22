@@ -4,5 +4,5 @@ Só resolvendo uns exercicios de fisica com PYTHON e JavaScript
 
 <p>Talvez a parte lógica descomplique seu raciocinio, nesse momento, o aprendizado é mais rápido do calculo de qualquer área exata</p>
 
- <canvas id="canvas" width="300" height="300"></canvas>
+ <img src="owl.jpg" alt="Coruja">
 

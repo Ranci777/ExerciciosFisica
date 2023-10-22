@@ -1,7 +1,8 @@
 # ExerciciosFisica
 Só resolvendo uns exercicios de fisica com PYTHON e JavaScript
 
-<h6>Talvez a parte lógica descomplique seu raciocinio, nesse momento, o aprendizado é mais rápido do calculo de qualquer área exata</h6>
+
+<p>Talvez a parte lógica descomplique seu raciocinio, nesse momento, o aprendizado é mais rápido do calculo de qualquer área exata</p>
 <style>
         body {
             font-family: Arial, sans-serif;

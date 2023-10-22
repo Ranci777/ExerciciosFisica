@@ -1,2 +1,74 @@
 # ExerciciosFisica
 Só resolvendo uns exercicios de fisica com PYTHON e JavaScript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolução Exercícios Física 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        #container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        canvas {
+            border: 2px solid #2ecc71;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Resolução Exercícios Física 1</h1>
+        <p>Missão: Aprender Física de forma descomplicada</p>
+        <canvas id="canvas" width="300" height="300"></canvas>
+    </div>
+
+    <script>
+        // Função de animação
+        function animate() {
+            var canvas = document.getElementById('canvas');
+            var ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            ctx.strokeStyle = '#2ecc71';
+            ctx.lineWidth = 2;
+
+            // Primeiro quadrado
+            ctx.beginPath();
+            ctx.moveTo(50, 50);
+            ctx.lineTo(250, 50);
+            ctx.lineTo(250, 250);
+            ctx.lineTo(50, 250);
+            ctx.closePath();
+            ctx.stroke();
+
+            // Segundo quadrado
+            ctx.beginPath();
+            ctx.moveTo(75, 75);
+            ctx.lineTo(225, 75);
+            ctx.lineTo(225, 225);
+            ctx.lineTo(75, 225);
+            ctx.closePath();
+            ctx.stroke();
+
+            setTimeout(animate, 1000);
+        }
+
+        animate();
+    </script>
+</body>
+</html>
+

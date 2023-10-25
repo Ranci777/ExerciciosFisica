@@ -1,1 +1,35 @@
+<?php
+
+function celsiusToFahrenheit($celsius) {
+    return ($celsius * 9/5) + 32;
+}
+
+function fahrenheitToCelsius($fahrenheit) {
+    return ($fahrenheit - 32) * 5/9;
+}
+
+function celsiusToKelvin($celsius) {
+    return $celsius + 273.15;
+}
+
+function kelvinToCelsius($kelvin) {
+    return $kelvin - 273.15;
+}
+
+function fahrenheitToKelvin($fahrenheit) {
+    return ($fahrenheit + 459.67) * 5/9;
+}
+
+function kelvinToFahrenheit($kelvin) {
+    return ($kelvin * 9/5) - 459.67;
+}
+
+// Exemplo de uso
+$temperaturaCelsius = 25;
+$temperaturaFahrenheit = celsiusToFahrenheit($temperaturaCelsius);
+$temperaturaKelvin = celsiusToKelvin($temperaturaCelsius);
+
+echo "{$temperaturaCelsius} graus Celsius é igual a {$temperaturaFahrenheit} graus Fahrenheit e {$temperaturaKelvin} Kelvin.";
+
+?>
 
